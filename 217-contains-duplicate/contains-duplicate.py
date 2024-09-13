@@ -8,17 +8,17 @@ class Solution:
         #         else:
         #             False  ------------------------>>>>>>>TLE
         
-        # seen = set()
-        # for num in nums:
-        #     if num in seen:
-        #         return True
-        #     seen.add(num)
-        # return False
-        
-        nums.sort()
-        for i in range(1,len(nums)):
-            if nums[i] == nums[i-1]:
+        seen = set()
+        for num in nums:
+            if num in seen:
                 return True
+            seen.add(num)
         return False
+        
+        # nums.sort()
+        # for i in range(1,len(nums)):
+        #     if nums[i] == nums[i-1]:
+        #         return True
+        # return False
 
 
