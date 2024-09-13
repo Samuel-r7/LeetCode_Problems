@@ -6,7 +6,7 @@ class Solution:
         #         if nums[i] == nums[k]:
         #             return True
         #         else:
-        #             False  ------------------------TLE
+        #             False  ------------------------>>>>>>>TLE
         
         seen = set()
         for num in nums:
